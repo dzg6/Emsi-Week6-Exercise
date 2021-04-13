@@ -1,0 +1,4 @@
+Id,Order,Total,Refunded
+1,{'Plain': 2},1.06,False
+2,"{'Sprinkles': 2, 'Glazed': 1, 'Cherry Bomb': 1}",7.59,False
+3,"{'Plain': 4, 'Glazed': 0, 'Sprinkles': 2, 'Cherry Bomb': 0}",6.1,True
