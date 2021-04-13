@@ -62,7 +62,7 @@ def updateDonutInventory(order):
         updated_inventory = row['Inventory']
         if row['Name'] in order:
             updated_inventory = updated_inventory - order[row['Name']]
-            donuts_CSV.loc[i, ['Inventory']] = updated_inventory)
+            donuts_CSV.loc[i, ['Inventory']] = updated_inventory
 
         outputJSON[row['Name']] = createDonut(i + 1,row['Name'],row['Price'],updated_inventory)
     donuts_CSV.to_csv(location, index=False)
